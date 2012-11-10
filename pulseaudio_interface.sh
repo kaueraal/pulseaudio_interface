@@ -157,16 +157,16 @@ notify-osd_osd()
 print_usage()
 {
 	echo "Usage: pulseaudio_interface.sh [-hgsmkidtnz]"
-	echo "-h			display this message"
-	echo "-g			get current volume"
-	echo "-s <value>	set volume to value"
-	echo "-m <yes|no>	set mute to value"
-	echo "-t			toggle mute"
-	echo "-k <sink>		select this sink"
-	echo "-i <value>	increase volume by value"
-	echo "-d <value>	decrease volume by value"
-	echo "-n			display volume using notify-osd"
-	echo "-z 			display volume using dzen2"
+	echo "-h            display this message"
+	echo "-g            get current volume"
+	echo "-s <value>    set volume to value"
+	echo "-m <yes|no>   set mute to value"
+	echo "-t            toggle mute"
+	echo "-k <sink>     select this sink"
+	echo "-i <value>    increase volume by value"
+	echo "-d <value>    decrease volume by value"
+	echo "-n            display volume using notify-osd"
+	echo "-z            display volume using dzen2"
 }
 
 while getopts "hgs:m:k:i:d:znt" OPT
