@@ -1,7 +1,7 @@
 pulseaudio_interface
 ====================
 
-Small, bash based script which allows controlling pulseaudio and displaying a osd via dzen2 or notify-osd
+Small, bash based script which allows controlling pulseaudio and displaying an osd via dzen2 or notify-osd
 
 Usage: pulseaudio_interface.sh [-hgsmkidtnz]
 -h              display this message
