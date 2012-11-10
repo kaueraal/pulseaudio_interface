@@ -4,14 +4,14 @@ pulseaudio_interface
 Small, bash based script which allows controlling pulseaudio and displaying a osd via dzen2 or notify-osd
 
 Usage: pulseaudio_interface.sh [-hgsmkidtnz]
--h			display this message
--g			get current volume
--s <value>	set volume to value
--m <yes|no>	set mute to value
--t			toggle mute
--k <sink>		select this sink
--i <value>	increase volume by value
--d <value>	decrease volume by value
--n			display volume using notify-osd
--z 			display volume using dzen2
+-h              display this message
+-g get          current volume
+-s <value>      set volume to value
+-m <yes|no>     set mute to value
+-t toggle       mute
+-k <sink>       select this sink
+-i <value>      increase volume by value
+-d <value>      decrease volume by value
+-n              display volume using notify-osd
+-z              display volume using dzen2
 
