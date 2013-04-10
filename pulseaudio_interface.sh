@@ -140,15 +140,15 @@ notify-osd_osd()
 	MUTE=$( get_mute )
 
 	if [[ $MUTE = "yes" ]]
-		then ICON="notification-audio-volume-muted"
+		then ICON="stock_volume-mute"
 	elif [[ $VOLUME_PERCENT -eq 0 ]] 
-		then ICON="notification-audio-volume-off"
+		then ICON="stock_volume-0"
 	elif [[ $VOLUME_PERCENT -le 33 ]] 
-		then ICON="notification-audio-volume-low"
+		then ICON="stock_volume-min"
 	elif [[ $VOLUME_PERCENT -le 66 ]] 
-		then ICON="notification-audio-volume-medium"
+		then ICON="stock_volume-med"
 	else
-		ICON="notification-audio-volume-high"
+		ICON="stock_volume-max"
 	fi
 
 	"$NOTIFY_SEND_PATH" -i $ICON -h int:value:$VOLUME_PERCENT -h string:synchronous:volume " "
